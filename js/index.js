@@ -8,11 +8,13 @@ const callback = (entries) => {
   const ent = entries[0];
 
   if (!ent.isIntersecting) {
-    document.querySelector(".bar").classList.remove("hidden");
+    document.querySelector(".bar").classList.add("opacity-100");
+    document.querySelector(".bar").classList.remove("opacity-0");
   }
 
   if (ent.isIntersecting) {
-    document.querySelector(".bar").classList.add("hidden");
+    document.querySelector(".bar").classList.remove("opacity-100");
+    document.querySelector(".bar").classList.add("opacity-0");
   }
 };
 

@@ -908,6 +908,14 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.opacity-0{
+  opacity: 0;
+}
+
+.opacity-100{
+  opacity: 1;
+}
+
 *, ::before, ::after{
   --tw-shadow: 0 0 #0000;
 }
