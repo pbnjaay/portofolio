@@ -27,7 +27,6 @@ onscroll = () => {
   let scrollPosition = document.documentElement.scrollTop;
 
   sections.forEach((section) => {
-    // console.log(section.attributes.id.value);
     if (
       scrollPosition >= section.offsetTop - section.offsetHeight * 0.25 &&
       scrollPosition <
@@ -49,7 +48,7 @@ let removeAllActiveClasses = () => {
 };
 
 let addActiveClass = (id) => {
-  console.log(id);
+
   let selector;
   if (id == "hero") return;
   selector = `nav a[href="#${id}"]`;
